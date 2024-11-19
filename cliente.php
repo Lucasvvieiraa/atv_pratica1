@@ -16,9 +16,9 @@ if ($_server["REQUEST_METHOD"] == "POST") {
         echo "Todos os campos são obrigatórios!";
     } else {
         if ($conn->query($sql) === TRUE) {
-            echo "Cliente cadastrado com sucesso!";
+            echo "Cliente cadastrado com sucesso";
         } else {
-            echo "Erro: " . $sql . "<br>" . $conn->error;
+            echo "Erro no cadastro: " . $sql . "<br>" . $conn->error;
         }
     }
 

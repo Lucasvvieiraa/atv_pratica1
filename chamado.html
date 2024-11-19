@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRO DE CHAMADO</title>
+</head>
+<body>
+    <h1>Cadastro de chamado</h1>
+    <form method="POST">
+        
+        <label for="id_cliente">CLIENTE:</label>
+        <select id="id_cliente" name="id_cliente" required>
+
+            <label for="descricao">Descrição do problema:</label>
+            <textarea id="descricao" name="descricao" required></textarea><br>
+    
+            <label for="criticidade">Criticidade:</label>
+            <select id="criticidade" name="criticidade" required>
+
+                <option value="baixa">Baixa</option>
+                <option value="média">Média</option>
+                <option value="alta">Alta</option>
+
+            </select><br>
+    
+            <button type="submit">Cadastrar Chamado</button>
+        </select>
+
+
+
+
+    </form>
+</body>
+</html>
